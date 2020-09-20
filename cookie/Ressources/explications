@@ -1,0 +1,11 @@
+1- Aller sur la page d'accueil
+2- Inspecter l'element
+	- Onglet Stockage (ou Applications)
+	- Cookies
+	- Trouver le cookie I_am_admin
+	- La valeur du cookie est un hash (md5) de "false"
+	- Trouver la valeur de "true" en md5 (https://dehash.me/)
+	- Remplacer la valeur du cookie I_am_admin par le hash md5 de "true":
+	b326b5062b2f0e69046810717534cb09
+	- Rafraichir la page
+3- Le flag apparait en alerte

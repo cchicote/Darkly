@@ -1,0 +1,7 @@
+1- Aller sur http://192.168.56.102/?page=survey
+2- Colonne Grade:
+	- Clic droit sur un menu deroulant
+	- Examiner l'element
+	- Modifier la valeur et le texte d'une des options (pas la 1) par une valeur genre 42
+	- Selectionner dans le menu deroulant l'option precedemment modifiee
+	- Le flag apparait

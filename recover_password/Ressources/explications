@@ -1,0 +1,6 @@
+1- Aller sur cette page: http://192.168.56.102/?page=recover
+2- Inspecter l'element SUBMIT
+	- On remarque la ligne
+	<input type="hidden" name="mail" value="webmaster@borntosec.com" maxlength="15">
+	- On modifie le champ value par une valeur random (Genre "ABCD")
+3- On clique sur SUBMIT et le flag apparait
