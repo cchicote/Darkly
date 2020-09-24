@@ -7,4 +7,4 @@ Sur la page /index.php?page=member nous pouvons faire des injections sql.
   countersign = 5ff9d0165b4f92b14994e5c685cdce28 et Commentaire = Decrypt this password -> then lower all the char. Sh256 on it and it's good !
 3/ Après un dehash en md5 de 5ff9d0165b4f92b14994e5c685cdce28 grâce à https://md5decrypt.net/ nous trouvons "FortyTwo".
   En passant tout en minuscule puis en hashant fortytwo en SHA256 grâce à https://md5decrypt.net/Sha256 on trouve 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
-4/ And it's god !
+4/ And it's good !
