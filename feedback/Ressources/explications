@@ -1,0 +1,6 @@
+Sur la page index.php?page=feedback, on peut y laisser des feedback.
+1/ On peut remarquer qu'il est possible de laisser un feedback vide avec seulement un nom.
+    Effectivement, dans la fonction validate_required il y a une faute de frappe qui nous le permet.
+    Un "mtxMessage" au lieu de "txtMessage"
+2/ On peut donc laisser ce champ vide et se concentrer sur le name, ou on peut directement mettre du html à l'intérieur
+  Par exemple, un <script>alert('bonjour')</script> après avoir autorisé un name de plus de 10 caractères fera apparaitre le flag.
