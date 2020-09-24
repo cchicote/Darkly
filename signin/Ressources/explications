@@ -1,7 +1,8 @@
 Sur la page /?page=signin nous devons trouver un mot de passe. Pour cela, nous allons utiliser la brute force.
 
 1\ La connexion se fait grâce à l'url, nous pouvons donc faire des requêtes directement avec les urls.
-2\ Nous avons trouvé sur internet une liste des 50 mots de passe les plus utilisés, et au final, shadow a fonctionné,
+2\ Pour cela, nous choisissons un utilisateur au hasard, cela n'est pas important, et nous changeons le champ password
+3\ Nous avons trouvé sur internet une liste des 50 mots de passe les plus utilisés, et au final, shadow a fonctionné,
   donnant ainsi le flag b3a6e43ddf8b4bbb4125e5e7d23040433827759d4de1c04ea63907479a80a6b2
 
 Vous pouvez directement lancer ./bruteforce.py pour tester le programme.

