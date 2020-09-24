@@ -1,0 +1,11 @@
+1- Aller sur <url>/robots.txt
+2- On voit deux chemins, ici on va prendre <url>/.hidden
+3- On comprend que dans <url>/.hidden il y a enormement de dossiers contenant chacun d'autres sous-dossiers et un fichier README
+4- En faisant un script on peut recuperer le contenu de tous les fichiers README pour chaque page
+5- Dans un des fichiers readme on obtient un flag
+   99dde1d35d1fdd283924d84e6d9f1d820
+6- Optionnel: Pendant que le script tournait je me suis apercu qu'il y avait systematiquement
+   trois dossiers imbriques, chacun commencant par une lettre. Le createur du sujet s'appelle
+   wil, trois lettres, trois sous-dossiers. Je suis donc alle voir dans les sous-dossiers:
+   <url>/.hidden/w------/i------/l------/README et bingo c'est bien l'emplacement du flag
+   trouve juste au dessus
