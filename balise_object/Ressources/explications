@@ -1,0 +1,16 @@
+1- Dans la homepage on remarque une image sur laquelle on peut cliquer
+2- On clique dessus
+3- On remarque que l'URL utilise un objet media et inclut une source que l'on peut modifier, aussi, le media n'est pas type
+4- Quand on inspecte le code, on remarque que l'object media est effectivement un object data comme l'explique cette balise:
+<object data="http://192.168.56.102/images/nsa_prism.jpg"></object>
+5- Une faille des balises objects consiste a injecter du code javascript encode en base64 qui pourra ensuite etre execute
+6- On va donc encoder en base64 sur ce site:
+https://www.base64encode.org/
+7- On encode une alerte JS basique:
+<script>alert('bonjour');</script>
+8- Une fois qu'on a notre alerte en base64, on utilise la syntaxe permettant d'injecter un script en tant que texte en base64:
+data:text/html;base64,<LE CODE EN BASE64>
+9- On obtient donc l'URL suivante:
+http://192.168.56.102/?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgnYm9uam91cicpOzwvc2NyaXB0Pg==
+10- Qui nous donne ce flag:
+928d819fc19405ae09921a2b71227bd9aba106f9d2d37ac412e9e5a750f1506d
