@@ -1,0 +1,13 @@
+Sur la page /?page=upload nous pouvons envoyer seulement des fichiers images.
+
+Mais l'une des vulnérabilités connues et de pouvoir, "piéger" le site pour
+  envoyer n'importe quel type de fichier, pouvant ensuite être interpréter.
+  Par exemple un fichier html
+
+1\ Créer un fichier html (disponible dans les ressources)
+2\ Executer la commande :
+  curl -F "uploaded=@test.html;type=image/jpeg" -F "Upload=up" "http://192.168.56.102/?page=upload" | grep "flag"
+  Ici, nous envoyons donc le fichier test.html, après avoir modifier le type par image/jpeg.
+  'uploaded' est le nom trouvé dans la balise input permettant de sélectionner un fichier.
+  Et 'Upload' est le nom trouvé dans la balise input permettant d'upload le fichier.
+3\ Cette commande nous donne comme résultat le flag 46910d9ce35b385885a9f7e2b336249d622f29b267a1771fbacf52133beddba8
