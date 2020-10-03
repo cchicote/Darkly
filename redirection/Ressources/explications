@@ -1,0 +1,7 @@
+1- Sur n'importe quelle page
+2- Clic droit sur un des icones de redirection
+<a href="index.php?page=redirect&site=facebook" class="icon fa-facebook"></a>
+3- remplacer facebook par n'importe quel autre site (genre google ou n'importe)
+4- Cliquer sur l'icone de redirection qu'on vient de modifier
+5- Bingo on a le flag
+b9e775a0291fed784a2d9680fcfad7edd6b8cdf87648da647aaf4bba288bcab3
