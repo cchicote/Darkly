@@ -3,7 +3,8 @@
 3- On remarque que l'URL utilise un objet media et inclut une source que l'on peut modifier, aussi, le media n'est pas type
 4- Quand on inspecte le code, on remarque que l'object media est effectivement un object data comme l'explique cette balise:
 <object data="http://192.168.56.102/images/nsa_prism.jpg"></object>
-5- Une faille des balises objects consiste a injecter du code javascript encode en base64 qui pourra ensuite etre execute
+5- Une faille des balises objects consiste a injecter du code javascript encode en base64 qui pourra ensuite etre execute :
+https://www.paladion.net/blogs/bypass-xss-filters-using-data-uris
 6- On va donc encoder en base64 sur ce site:
 https://www.base64encode.org/
 7- On encode une alerte JS basique:
