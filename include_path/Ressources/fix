@@ -1,0 +1,7 @@
+Mettre un fichier .htaccess qui permet de restreindre l'acces a certains repertoires, fichiers, etc et d'ameliorer certains aspects de la securite du site
+Par exemple un fichier .htaccess avec comme contenu:
+Order allow, deny
+Deny from all
+
+Ensuite pour configurer de facon personnalisee le fichier .htpasswd et ainsi les acces aux fichiers du serveur, il faut regarder plus en detail la documentation
+
