@@ -1,0 +1,16 @@
+Les failles upload sont des failles très dangereuses.
+Effectivement, la possibilité de pouvoir upload n'importe quel type de fichier sur le site
+peut potentiellement permettre à un attaquant d'avoir accès à tous les fichiers du site,
+et donc d'avoir les accès admins.
+
+Protection :
+Plusieurs techniques peuvent être utilisées pour se prémunir de ce genre d'attaque.
+- Renommer les fichiers de manière aléatoire et enregister le nom sur le base de donnée. Pour empêcher l'écrasement de fichier
+- Vérifier le mime-type avec, par exemple, getimagesize()
+- Vérifier l’extension du fichier.
+- Si c'est applicable, faire une analyse anti-virus/malware sur avant l'upload
+- Ne pas stocker les fichiers upload à la racine du site.
+- Mettre les bons droits au dossier où sont upload les fichiers.
+- Faire attention aux fichiers sensibles, comme .htaccess et empêcher leur réécriture.
+- ...
+Lien très intéressant, regroupant les différentes méthodes : https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload
