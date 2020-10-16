@@ -1,0 +1,12 @@
+Ici la faille est plutot evidente puisque les instructions nous sont donnees dans le code source de la page
+En revanche, il faut rester vigilants quant a l'utilisation des user-agents
+Ces derniers peuvent ouvrir la porte a l'exploitation de certaines failles:
+- L'execution de scripts stockes dans le user agent puis executes quand l'admin va regarder la liste des user agents (et l'attaquant pourra ainsi potentiellement prendre le controle du serveur)
+- Les injections SQL quand le user agent est stocke dans une base de donnee SQL
+- Dans certains cas un DOS (Denial of Service) quand le user agent depasse une certaine taille (4kb pour une attaque faite en 2001 sur les serveurs Shoutcast, et en 255 caracteres pour les serveurs de Darwin Streaming Server en 2006)
+
+Les fix dependent donc de la facon dont on va stocker le user agent (si on veut vraiment le stocker puisque dans certains cas c'est inutile)
+Il est essentiel de restreindre et valider l'input (et l'output dans le cas de la faille XSS mentionnee en premier lieu), et ne pas hesiter a remplacer certains caracteres "cles" par d'autres (genre "<" par "&lt" pour eviter l'utilisation de balises)
+
+Lien pour les failles user-agent:
+https://www.sans.org/reading-room/whitepapers/malicious/user-agent-field-analyzing-detecting-abnormal-malicious-organization-33874
