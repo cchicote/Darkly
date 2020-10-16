@@ -57,7 +57,6 @@ list_50_password = [
 ,'ginger'
 ]
 
-list_50_password = ["shadow"]
 def main():
     for password in list_50_password :
         print(password)

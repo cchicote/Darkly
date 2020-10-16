@@ -1,0 +1,15 @@
+Nous pouvons donc nous connecter facilement à un utilisateur pour plusieurs raison.
+
+L'architecture du site d'une part. Effectivement, le mot de passe se trouvant dans l'url
+il est très simple, avec une requête curl, de faire des tests de mot de passe.
+
+D'autre part, parce que l'utilisateur n'a pas protégé son mot de passe.
+Il faut donc bien faire attention, lorsque l'on choisit un mot de passe, à respecter les recommandations de la cnil :
+"Choisissez des mots de passe d’au moins 12 caractères de types différents (majuscules, minuscules, chiffres, caractères spéciaux)."
+
+Protection :
+Dans un premier temps, ne pas mettre le mot de passe (en clair !) dans l'url peut être une bonne idée.
+Cela compliquera un peu le travail.
+Ensuite, limité le nombre d'essai de mot de passe par utilisateur peut en être une autre.
+Limité à 3 essais par exemple peut être un bon moyen d'éviter les attaques par brute force.
+On peut aussi imaginer, au bout d'un essai faux, de faire apparaître un captcha, empêchant un bot de faire des tests de masse.

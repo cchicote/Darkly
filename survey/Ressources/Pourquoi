@@ -1,0 +1,6 @@
+Risque :
+Nous pouvons ainsi falsifier des données statistiques.
+Le site n'étant à priori pas protéger contre ce genre de corruption, nous pouvons mettre tout et n'importe quoi.
+
+Protection :
+Vérifier les informations envoyé par un tel formulaire et refuser les valeurs non prévues.
