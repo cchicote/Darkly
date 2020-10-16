@@ -1,11 +1,11 @@
-1- Go to <url>/robots.txt
-2- Two paths are given in the URL, and the one we're visiting now is /whatever
-3- On <url>/whatever, there is a downloadable file called htpasswd, it's commonly used
-   to protect password with MD5 algorithm
-4- This file contains the login/passwd:
+1- Aller sur <url>/robots.txt
+2- Deux chemins s'offrent a vous, et celui que l'on emprunte est /whatever
+3- Sur <url>/whatever, il y a un fichier telechargeable qui s'appelle htpasswd, et qui est
+   communement utilise pour proteger les mot de passe avec l'algorithme MD5
+4- Ce fichier contient le combo login/password:
    root:8621ffdbc5698829397d97767ac13db3
-5- On https://dehash.me/ we find that the root password is dragon
-6- We previously noticed that there is a page <url>/admin so we visit this page
-7- When we enter the root:dragon credentials, we get to a beautiful page with the following flag:
+5- Sur https://dehash.me/ on voit que le mot de passe trouve juste au-dessus est "dragon"
+6- Lors de l'inspection du site nous avons precedemment remarque qu'il y a une page <url>/admin donc nous
+   nous rendons sur cette page
+7- Quand on entre le combo de credentials root:dragon, nous arrivons a une magnifique page (cc Mathieu Mahe) avec le flag suivant:
    d19b4823e0d5600ceed56d5e896ef328d7a2b9e7ac7e80f4fcdb9b10bcb3e7ff
-
