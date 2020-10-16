@@ -1,0 +1,5 @@
+Il y a un mail, en dur, dans le html qui envoie un mail pour un changement de mot de passe.
+Protection :
+Il ne faut pas mettre de mail en dur dans le html et les formulaires.
+Une solution est de demander à l'utilisateur son adresse mail, et après une vérification
+de correspondance user/email envoyer le mail.
