@@ -1,0 +1,6 @@
+Avec un simple changement de variable, n'importe qui peut donc être administrateur.
+Stocker une information aussi importante en cookies est donc très risqué. Même en ayant hashé la variable.
+
+Protection :
+Ne pas stocker de telle information en cookies.
+Une base de donnée fera amplement l'affaire.
