@@ -1,0 +1,7 @@
+Ici, nous avons une faille XSS.
+C'est une faille dangereuse qu'il faut pouvoir régler au plus vite.
+Ici, nous avons simplement exécuter une alert, mais on peut dès lors exécuter n'importe quel script, n'importe quel code susceptible d'être interprété
+
+Protection :
+- Utiliser la fonction htmlspecialchars()​ qui filtre les '<' et '>' permettant de balise du code.
+- Utiliser la fonction htmlentities()​ sauf qu'elle filtre tous les caractères équivalents au codage HTML ou JavaScript. Plus complète que htmlspecialchars()
