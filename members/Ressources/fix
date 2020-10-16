@@ -1,0 +1,9 @@
+Ici, nous avons accès à l'intégralité d'une base de données grâce à une injection sql.
+Cette pratique permet potentiellement, de récupérer des mots de passe, ou bien d'autres informations sensible.
+
+Protection :
+Des solutions existent pour s'en prémunir.
+En PHP par exemple, nous pouvons escape tous les caractères spéciaux présent dans une requête.
+(avec addslashes(), magic_quotes_gpc() ou encore mysqli_real_escape_string() qui est le plus efficace.).
+Des fonctions permettent aussi de vérifier le formatage final de la requête avant de le soumettre.
+(Avec PDO : https://www.php.net/manual/fr/book.pdo.php)
