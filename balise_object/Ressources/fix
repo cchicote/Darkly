@@ -1,0 +1,3 @@
+1- Solution la plus simple: ne pas utiliser de balise object et utiliser une balise image a la place
+2- S'il est quand meme question d'utiliser une balise object, si on veut empecher l'execution de script en base64 il
+   faut tout simplement decoder le payload puis le parser pour detecter d'eventuelles balises <script>
