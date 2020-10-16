@@ -1,0 +1,7 @@
+Même si le robots.txt est un fichier important, il vaut mieux éviter de stocker ce genre de path.
+De plus, même si nous mettons Disallow dans robots.txt, cela n'empêche pas de
+deny all dans un .htaccess
+
+Protection :
+Eviter de mettre ce genre de fichier dans un robots.txt
+Ajouter un .htaccess pour empêcher les accès à un fichier.
